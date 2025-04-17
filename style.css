@@ -1,0 +1,247 @@
+/* ================== BASE ================== */
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #e0f7fa;
+  color: #000000;
+  text-align: center;
+  padding: 20px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* ================== BOTÕES GERAIS ================== */
+button {
+  font-size: 1.3em;
+  padding: 14px 30px;
+  background-color: #0288d1;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+button:hover {
+  background-color: #0277bd;
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.16);
+}
+
+button:active {
+  transform: scale(1);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ================== HEADER ================== */
+header {
+  background-color: #0288d1;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(2, 136, 209, 0.6);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+  color: #ffffff;
+}
+
+h2 {
+  margin-top: 30px;
+  color: #01579b;
+}
+
+/* ================== INTRODUÇÃO ================== */
+#introducao {
+  margin-top: 40px;
+  background: linear-gradient(135deg, #b2ebf2, #e0f7fa);
+  padding: 50px 30px;
+  border-radius: 25px;
+  box-shadow: 0 0 30px rgba(2, 119, 189, 0.3);
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+#introducao h2 {
+  font-size: 2.2em;
+  color: #006064;
+  margin-bottom: 25px;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+#introducao p {
+  font-size: 1.5em;
+  margin: 20px 0;
+  color: #004d40;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+#introducao p strong {
+  color: #00695c;
+  font-weight: 700;
+}
+
+#introducao button {
+  font-size: 1.5em;
+  padding: 14px 28px;
+  background-color: #039be5;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#introducao button:hover {
+  background-color: #0277bd;
+  transform: scale(1.05);
+}
+
+#introducao button:active {
+  transform: scale(1);
+}
+
+/* ================== PLAYLIST ================== */
+#playlist {
+  margin-top: 40px;
+  animation: fadeIn 1.5s ease-in-out;
+  padding: 30px 20px;
+  background: linear-gradient(135deg, #b3e5fc, #e1f5fe);
+  border-radius: 25px;
+  box-shadow: 0 0 20px rgba(2, 119, 189, 0.2);
+}
+
+#playlist h2 {
+  font-size: 2.2em;
+  color: #01579b;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+form {
+  margin-top: 20px;
+}
+
+#playlist label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #ffffff;
+  color: #004d40;
+  font-size: 1.3em;
+  padding: 14px 20px;
+  border-radius: 15px;
+  margin: 15px auto;
+  max-width: 500px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+#playlist label:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+#playlist input[type="radio"] {
+  margin-right: 8px;
+  transform: scale(1.3);
+}
+
+#playlist label::before {
+  content: "🎵";
+  font-size: 1.5em;
+}
+
+#playlist button {
+  font-size: 1.3em;
+  padding: 14px 30px;
+  background-color: #0288d1;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+#playlist button:hover {
+  background-color: #0277bd;
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.16);
+}
+
+#playlist button:active {
+  transform: scale(1);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ================== MENSAGEM FINAL ================== */
+#final-message {
+  margin-top: 40px;
+  background-color: #b3e5fc;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(2, 119, 189, 0.3);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* ================== QUIZ: PERGUNTAS E RESPOSTAS ================== */
+#pergunta-container {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+#pergunta-container p {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #01579b;
+  margin-bottom: 25px;
+}
+
+#pergunta-container label {
+  display: block;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 1.1em;
+  padding: 8px 14px;
+  border-radius: 10px;
+  margin: 6px 0;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.12);
+}
+
+#pergunta-container label:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.02);
+}
+
+#pergunta-container input[type="radio"] {
+  margin-right: 8px;
+}
+
+#pergunta-container button {
+  font-size: 1.2em;
+  padding: 10px 22px;
+  background-color: #039be5;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: background-color 0.3s;
+}
+
+#pergunta-container button:hover {
+  background-color: #0277bd;
+}

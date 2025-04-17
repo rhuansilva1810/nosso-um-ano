@@ -1,0 +1,113 @@
+/* ================== BASE ================== */
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #e0f7fa; /* Azul claro */
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* ================== HEADER ================== */
+header {
+    background-color: #0288d1; /* Azul */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(2, 136, 209, 0.6); /* Sombra suave */
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #ffffff;
+}
+
+/* ================== CONTAINER PRINCIPAL ================== */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* ================== SEÇÕES DE TEXTO (Mensagem) ================== */
+.mensagem, .mensagemm {
+    background-color: #ffffff; /* Fundo branco */
+    padding: 20px;
+    margin: 5px 0;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mensagem h2, .mensagemm h2 {
+    margin-top: 0;
+    color: #0288d1; /* Azul */
+}
+
+.mensagem p, .mensagemm p {
+    line-height: 1.6;
+}
+
+/* ================== IMAGENS ================== */
+.imagem {
+    text-align: center;
+    margin: 80px 0;
+}
+
+.imagem img {
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+/* ================== BOTÕES ================== */
+button {
+    font-size: 1.3em;
+    padding: 14px 30px;
+    background-color: #0288d1; /* Azul */
+    border: none;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+button:hover {
+    background-color: #0277bd; /* Azul mais escuro */
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.16);
+}
+
+button:active {
+    transform: scale(1);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ================== ANIMAÇÕES ================== */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ================== TEXTO ROMÂNTICO ================== */
+.mensagem-romantica {
+    font-size: 1.5em;
+    font-family: 'Dancing Script', cursive;
+    color: #0277bd;
+    text-align: center;
+    margin-top: 100px;
+    animation: fadeIn 2s ease-in-out;
+}

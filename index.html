@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nosso 1 ano 💖</title>
+
+  <!-- ================== FONTES E ESTILOS ================== -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ================== CABEÇALHO ================== -->
+  <header>
+    <h1>Feliz um ano de namoro, meu amor 💘</h1>
+  </header>
+
+  <!-- ================== INTRODUÇÃO ================== -->
+  <section id="introducao">
+    <h2>✨ Nosso amor faz 1 ano! 💖 ✨</h2>
+    <p>
+      Hoje celebramos <strong>1 ano de namoro</strong>, cheio de risadas, histórias, aprendizados e muito amor.<br>
+      Cada momento com você é especial — até aqueles mais simples viram lembranças boas.<br><br>
+      Mas será que você me conhece mesmo, vida? 🤔<br>
+      Vem descobrir comigo agora...
+    </p>
+    <button onclick="irParaPlaylist()">Vamos Começar 💝</button>
+  </section>
+  
+
+  <!-- ================== PLAYLIST ================== -->
+  <section id="playlist" style="display: none;">
+    <h2>Primeiro, escolha uma música para curtir o momento 🎵</h2>
+    <form id="music-form">
+      <label><input type="radio" name="musica" value="musicas/i_never_felt_so_alone.mp3"> I Never Felt So Alone - Labrinth ft. Billie Eilish</label><br>
+      <label><input type="radio" name="musica" value="musicas/the_cut_that_always_bleeds.mp3"> The Cut That Always Bleeds - Conan Gray</label><br>
+      <label><input type="radio" name="musica" value="musicas/call_out_my_name.mp3"> Call Out My Name - The Weeknd</label><br>
+      <label><input type="radio" name="musica" value="musicas/no_idea.mp3"> No Idea - Don Toliver</label><br><br>
+      <button type="button" onclick="iniciarQuiz()">Começar Quiz</button>
+    </form>
+  </section>
+
+  <!-- ================== QUIZ ================== -->
+  <section id="quiz" style="display: none;">
+    <div id="pergunta-container"></div>
+  </section>
+
+  <!-- ================== MENSAGEM FINAL ================== -->
+<section id="final-message" style="display: none;">
+  <h2 id="titulo-final"></h2>
+  <p id="mensagem-final"></p>
+  <!-- Botão de "Veja sua Surpresa" ao invés de refazer o quiz -->
+  <button id="btn-final" onclick="verSurpresa()">Veja sua Surpresa</button>
+</section>
+
+
+  <!-- ================== ÁUDIO ================== -->
+  <audio id="audio" autoplay loop></audio>
+
+  <!-- ================== SCRIPT ================== -->
+  <script src="script.js"></script>
+</body>
+</html>
